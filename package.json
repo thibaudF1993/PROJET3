@@ -1,0 +1,19 @@
+{
+  "name": "projet-3",
+  "version": "1.0.0",
+  "description": "dynamiser une page web avec des animations css",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thibaudF1993/Projet3.git"
+  },
+  "author": "FRIEDRICH Thibaud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thibaudF1993/Projet3.git"
+  },
+  "homepage": "https://github.com/thibaudF1993/Projet3.git"
+}

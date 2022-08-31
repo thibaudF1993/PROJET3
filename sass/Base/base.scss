@@ -1,0 +1,20 @@
+@font-face {
+    font-family: roboto;
+    src: url(css\polices\Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: shrikhand;
+    src: url(css\polices\Shrikhand-Regular.otf);
+}
+
+
+#logo {
+    font-family: shrikhand;
+}
+
+* {
+    font-family: roboto;
+}
+
+
