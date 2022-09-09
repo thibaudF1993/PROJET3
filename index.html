@@ -10,18 +10,18 @@
 </head>
 <body>
 
-    <header>
+    <header class="header">
         
         <img class="header-logo" src="css\images\ohmyfood.png" alt="logo"/>
 
     </header>
 
-    <nav>
+    <nav class="nav">
 
-        <form class="localisation" method="get">
-            <p>
-                <i class="fa-solid fa-location-dot"></i>
-                <input type="text" name="localisation" placeholder="Paris, Belleville" maxlength="25" autofocus/>
+        <form class="form" method="get">
+            <p class="form-heading">
+                <i class="form-heading__GPS fa-solid fa-location-dot"></i>
+                <input class="form-heading__input" type="text" name="localisation" placeholder="Paris, Belleville"/>
             </p>
         </form>
 
@@ -47,9 +47,9 @@
 
                 <span class="btn-order__number">1</span>
 
-                <button class="btn-order__btn-fct" type="button">
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                    Choisissez un restaurant
+                <button class="btn-order__btn-fct" type="button" name="button">
+                    <i class="icons fa-solid fa-mobile-screen-button"></i>
+                    <p>Choisissez un restaurant</p>
                 </button>
 
             </div>
@@ -59,8 +59,8 @@
                 <span class="btn-order__number">2</span>
 
                 <button class="btn-order__btn-fct" type="button">
-                    <i class="fa-solid fa-list"></i>
-                    Composez votre menu
+                    <i class="icons fa-solid fa-list"></i>
+                    <p>Composez votre menu</p>
                 </button>
 
             </div>
@@ -70,8 +70,8 @@
                 <span class="btn-order__number">3</span>
 
                 <button class="btn-order__btn-fct" type="button">
-                    <i class="fa-solid fa-store"></i>
-                    Dégustez au restaurant
+                    <i class="icons fa-solid fa-store"></i>
+                    <p>Dégustez au restaurant</p>
                 </button>
 
             </div>
@@ -95,9 +95,8 @@
                 <div class="cards-pic">
                     <img src="css\images\la palette du goût.jpg" alt="un plat sur une table d'un restaurant">
 
-                    <div class="cards-new">
-                        <p>nouveau</p>
-                    </div>
+                    <p class="cards-new">Nouveau</p>
+                    
                     
                 </div>
                 
@@ -109,7 +108,8 @@
                     </div>
 
                     <div class="heart-icon">
-                        <i class="fa-solid fa-heart"></i>
+                        <div class="empty-heart"><i class="fa-regular fa-heart fa-2xl heart-empty"></i></div>
+                        <div class="colorized-heart"><i class="fa-solid fa-heart fa-2xl heart-color1" ></i></div>
                     </div>
                 </div>
             </a>
@@ -120,10 +120,10 @@
             <a href="menu 2.html">
 
                 <div class="cards-pic">
-                    <img src="css\images\la note enchantée.jpg" alt="un plat sur une table d'un restaurant">
+                    <img class="cards-pic" src="css\images\la note enchantée.jpg" alt="un plat sur une table d'un restaurant">
 
                     <div class="cards-new">
-                        <p>nouveau</p>
+                        <p>Nouveau</p>
                     </div>
                     
                 </div>
@@ -136,7 +136,9 @@
                     </div>
 
                     <div class="heart-icon">
-                        <i class="fa-solid fa-heart"></i>
+                        <div class="empty-heart"><i class="fa-regular fa-heart fa-2xl heart-empty"></i></div>
+                        <div class="colorized-heart"><i class="fa-solid fa-heart fa-2xl heart-color1" ></i></div>
+
                     </div>
                 </div>
             </a>
@@ -158,7 +160,8 @@
                     </div>
 
                     <div class="heart-icon">
-                        <i class="fa-solid fa-heart"></i>
+                        <div class="empty-heart"><i class="fa-regular fa-heart fa-2xl heart-empty"></i></div>
+                        <div class="colorized-heart"><i class="fa-solid fa-heart fa-2xl heart-color1" ></i></div>
                     </div>
                 </div>
             </a>
@@ -180,7 +183,8 @@
                     </div>
 
                     <div class="heart-icon">
-                        <i class="fa-solid fa-heart"></i>
+                        <div class="empty-heart"><i class="fa-regular fa-heart fa-2xl heart-empty"></i></div>
+                        <div class="colorized-heart"><i class="fa-solid fa-heart fa-2xl heart-color1" ></i></div>
                     </div>
                 </div>
             </a>
@@ -190,25 +194,27 @@
 
     </section>
 
-    <footer>
+    <footer class="footer">
         
-        <p><img src="css\images\ohmyfood.png" alt="logo" class="footer-logo"/></p>
+        <p><img src="css\images\ohmyfood.png" alt="logo" class="footer__logo"/></p>
 
         <div class="footer-link">
-            <i class="fa-solid fa-utensils"></i>
+            <i class="footer-link__icons fa-solid fa-utensils"></i>
             <p><a href="#">Proposer un restaurant</a></p>
         </div>
 
         <div class="footer-link">
-            <i class="fa-solid fa-handshake-angle"></i>
-            <p><a href="#">Devenir partenaire</a></p>
+            <i class="footer-link__icons fa-solid fa-handshake-angle"></i>
+            <p class="footer-link__txt"><a href="#">Devenir partenaire</a></p>
         </div>
 
-        <p><a href="#">Mentions légales</a></p>
+        <div class="footer-link-2">
+            <a href="#">Mentions légales</a>
+        </div>    
 
-        <p>
+        <div class="footer-link-2">
             <a href="mailto:thibaud.friedrich@live.fr">Contact</a>
-        </p>
+        </div> 
 
     </footer>
 
