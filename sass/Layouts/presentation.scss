@@ -1,0 +1,14 @@
+.presentation {
+    text-align: center;
+    padding: 50px 0;
+    font-family: $police-txt;
+    text-align: center;
+    background-color: $extra-color;
+    &__title {
+        font-size: 50px;
+    }
+    &__descr {
+        font-size: 30px;
+    }
+}
+

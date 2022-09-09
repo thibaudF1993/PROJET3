@@ -1,20 +1,27 @@
 @font-face {
-    font-family: roboto;
-    src: url(css\polices\Roboto-Regular.ttf);
+    font-family: "roboto";
+    src: url(polices/Roboto-Regular.ttf);
+    src: url(polices/Roboto-Regular.woff);
+    src: url(polices/Roboto-Regular.woff2);
 }
+
 
 @font-face {
-    font-family: shrikhand;
-    src: url(css\polices\Shrikhand-Regular.otf);
+    font-family: "shrikhand";
+    src: url(polices/Shrikhand-Regular.otf);
+    src: url(polices/shrikhand.regular.ttf);
+    src: url(polices/Shrikhand-Regular.eot);
+    src: url(polices/Shrikhand-Regular.woff);
+    src: url(polices/Shrikhand-Regular.woff2) 
 }
 
+.boxsizing{
+    -moz-box-sizing    : border-box; /* Firefox */
+    -webkit-box-sizing : border-box; /* Safari */
+    box-sizing         : border-box;
+    *behavior          : url(/js/boxsizing.htc); /* ie7 et ie8 */
+  }
 
-#logo {
-    font-family: shrikhand;
-}
-
-* {
-    font-family: roboto;
-}
-
-
+  body {
+    margin: 0;
+  }

@@ -1,4 +1,13 @@
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
+$color-primary: rgba(147, 86, 220);
+$color-secondary: rgba(255, 121, 218);
+$color-tertiary: rgba(153, 226, 208);
+$extra-color : rgb(246,246,246);
 
+$police-txt: "roboto";
+$police-title: "shrikhand";
+
+$breakpoints: (
+    mobile: 767px,
+    tablette: 991px,
+    desktop: 992px,
+);

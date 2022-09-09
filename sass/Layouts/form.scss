@@ -1,0 +1,25 @@
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0;
+    box-shadow: 1px 4px 3px #b0b0b0 inset;
+}
+
+.form-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__input {
+        background: #e0e0e0;
+        height: 40px;
+        border: none;
+        font-size: 25px;
+        text-align: center;
+        width: 75%;
+        
+    }
+    &__GPS {
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,38 @@
+.footer {
+    background-color: adjust-color($color: black, $hue: 0, $saturation: 0%, $lightness: 20%);
+    font-family: roboto;
+    padding-bottom: 20px;
+    font-size: 22px;
+
+    &__logo {
+    filter: brightness(16);
+    margin-top: 40px;
+    margin-left: 40px;
+    height: 25px;
+    }
+    & a {
+        text-decoration: none;
+        color: white;
+    }
+    & .footer-link {
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+        padding: 4.5px 0px;
+        height: 25px;
+        &__icons {
+            padding-right: 15px;
+            color: white;
+            font-size: 22px;
+        }
+        &__txt {
+            text-indent: -7px;
+        }
+    }
+    & .footer-link-2 {
+        padding: 2.5px 0px;
+        margin-left: 40px;
+        display: block;
+        }
+}
+

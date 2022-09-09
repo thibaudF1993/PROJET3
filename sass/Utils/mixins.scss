@@ -1,0 +1,23 @@
+@mixin mobile-only {
+    @media all and (max-width: map-get($breakpoints, mobile)){
+        @content;
+}    
+}
+
+@mixin tablette-only {
+    @media all and (min-width: 768px) and (max-width: map-get($breakpoints, tablette)){
+        @content;
+}    
+}
+
+@mixin desktop  {
+    @media all and (min-width: map-get($breakpoints, desktop)){
+        @content;
+    }
+}
+
+@mixin heart-icons {
+    display: block;
+    position: absolute;
+    line-height: 40px;
+}

@@ -1,14 +1,15 @@
-@import "./utils/variables";
+@import "./utils/variables"; 
 @import "./utils/functions";
 @import "./utils/mixins";
-@import "./utils/extensions";
 @import "./base/base";
 @import "./base/typography";
 @import "./components/buttons";
-@import "./layouts/header";
+@import "./components/cards";
 @import "./layouts/container";
-@import "./pages/accueil";
-@import "./pages/menu 1";
-@import "./pages/menu 2";
-@import "./pages/menu 3";
-@import "./pages/menu 4";
+@import "./layouts/functioning";
+@import "./layouts/form";
+@import "./layouts/footer";
+@import "./layouts/header";
+@import "./layouts/presentation";
+
+
