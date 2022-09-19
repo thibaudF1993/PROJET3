@@ -1,0 +1,28 @@
+.heart-icon {
+    position: relative;
+    font-size: 23px;
+    height: 40px;
+    & .empty-heart {
+        color: black;
+        & .heart-empty {
+            @include heart-icons;
+        }
+    }
+    & .colorized-heart {
+        height: 0px;
+        position: relative;
+        overflow: hidden;
+        width: 54px;
+        transition: height 300ms linear;
+        color: $color-primary;
+        &  .heart-color1 {
+            @include heart-icons;
+        }
+    }
+    &:hover .colorized-heart {
+        height: 40px;
+    }
+    @include tablette-only {
+        font-size: 20px;
+    }
+}

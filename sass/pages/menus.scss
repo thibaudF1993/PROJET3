@@ -1,0 +1,94 @@
+.menu {
+    background-color: $extra-color;
+    padding-bottom: 20px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    & .intro {
+      position: relative;
+      &__restau-name {
+        font-size: 27px;
+        font-family: "shrikhand";
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(246,246,246);
+        border-top-right-radius: 70px;
+        border-top-left-radius: 70px;
+        @include desktop {
+          flex-direction: column;
+          border-radius: inherit;
+          font-size: 30px;
+        }
+      }
+      &__restau-pic {
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        & img { 
+          width: 100%;
+          object-fit: cover;
+          height: 460px;
+        }
+        @include desktop {
+          height: 600px
+        }  
+      }
+      @include desktop {
+        margin-bottom: 40px;
+      }
+    }
+    
+  }
+
+  @keyframes meal-presentation {
+    0% {
+      
+      transform: scaleY(0.8);
+      opacity: 0;
+    }
+    100% {
+      
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+
+  .type-of-meal {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    animation: meal-presentation 2000ms 100ms backwards;
+    &--plats {
+      animation: meal-presentation 2000ms 300ms backwards;
+    }
+    &--desserts {
+      animation: meal-presentation 2000ms 500ms backwards;
+    }
+    &__title {
+      @include menu-title-section;
+      @include tablette-only {
+        text-align: center;
+      }
+      @include desktop {
+        font-size: 27px;
+        background-color: adjust-color($color: $color-secondary, $hue: 20, $saturation: 0%, $lightness: 10%);
+        border-radius: 32px;
+        padding: 15px;
+      }
+  }
+  @include desktop {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+
+.command {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    background-color: $extra-color;
+  }

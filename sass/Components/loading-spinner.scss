@@ -1,0 +1,71 @@
+.loading-spinner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 9000;
+    pointer-events: none;
+    animation: disappearing 2700ms 2500ms forwards;
+}
+
+.t404 {
+    visibility: hidden;
+    animation: arrival 3500ms 3500ms forwards;
+}
+
+.load {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0;
+    &__circle {
+        background-color: rgb(147, 86, 220);
+        height: 100px;
+        width: 100px;
+        border-radius: 100px;
+        border: 1px solid grey;
+        animation: loading 600ms 100ms ease-in-out alternate-reverse 5;
+        &--color2 {
+            background-color: $color-secondary;
+            animation-delay: 300ms;
+        }
+        &--color3 {
+            background-color: $color-tertiary;
+            animation-delay: 500ms;
+        }
+    }
+}
+
+@keyframes loading {
+    0% {
+        transform: scaleY(1);
+        visibility: visible;
+    }
+
+    100% {
+        transform: scaleY(0);
+        visibility: hidden;
+    }
+}
+
+@keyframes arrival {
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes disappearing {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
