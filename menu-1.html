@@ -12,30 +12,36 @@
 
 <body>
     
-    <header>
+    <header class="header">
 
-        <a class="header__a" href="index.html"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>
+        <a class="header__link" href="index.html"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>
 
-        <img src="css\images\ohmyfood.png" alt="logo" class="header-logo"/>
+        <img src="css\images\ohmyfood.png" alt="logo" class="header__logo"/>
 
     </header>
-
-    <section class="restau-pic">
-
-        <img src="css\images\la palette du goût.jpg" alt="photo restaurant"/>
-
-    </section>
+    
 
     <section class="menu">
 
-        <div class="menu-title">
-            <h1>La palette du goût</h1>
-            <i class="fa-solid fa-heart"></i>
+        <div class="intro">
+
+            <div class="intro__restau-pic">
+                <img src="css\images\la palette du goût.jpg" alt="photo restaurant"/>
+            </div>
+
+            <div class="intro__restau-name">
+                <h1>La palette du goût</h1>
+                <div class="heart-icon">
+                    <div class="empty-heart"><i class="fa-regular fa-heart fa-2xl heart-empty"></i></div>
+                    <div class="colorized-heart"><i class="fa-solid fa-heart fa-2xl heart-color1" ></i></div>
+                </div>
+            </div>
+
         </div>
 
-        <section class="entrées">
+        <div class="type-of-meal type-of-meal">
 
-            <h2 class="entrées-title">entrées</h2>
+            <h2 class="type-of-meal__title">entrées</h2>
 
                 <button class="btn-menu" name="button" type="button">
                     
@@ -45,8 +51,28 @@
                     </div>
 
                     <div class="btn-menu-price">
-                        <p>25€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="btn-menu-price__number">25€</div>
+                    </div>
+
+                    <div class="btn-menu-check">  
+                        <i class="btn-menu-check__icon fa-solid fa-circle-check"></i>
+                    </div>  
+
+                </button>
+
+                <button class="btn-menu" name="button" type="button">
+
+                    <div class="btn-menu-body">
+                        <h2 class="btn-menu-body__title">Foie gras de canard mi-cuit</h2>
+                        <p class="btn-menu-body__descr">Et ses copeaux de truffe noire</p>
+                    </div>
+
+                    <div class="btn-menu-price">
+                        <div class="btn-menu-price__number">35€</div>
+                    </div>
+
+                    <div class="btn-menu-check"> 
+                        <i class="btn-menu-check__icon fa-solid fa-circle-check"></i>
                     </div>
 
                 </button>
@@ -54,129 +80,135 @@
                 <button class="btn-menu" name="button" type="button">
 
                     <div class="btn-menu-body">
-                        <h2 class="btn-menu__title">Foie gras de canard mi-cuit</h2>
-                        <p class="btn-menu__descr">Et ses copeaux de truffe noire</p>
+                        <h2 class="btn-menu-body__title">Oeuf au plat</h2>
+                        <p class="btn-menu-body__descr">Assaisonné à la truffe sur lit de caviar</p>
                     </div>
 
                     <div class="btn-menu-price">
-                        <p>35€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="btn-menu-price__number">20€</div>
+                    </div>
+                    
+                    <div class="btn-menu-check"> 
+                        <i class="btn-menu-check__icon fa-solid fa-circle-check"></i>
+                    </div>
+
+                </button>
+
+        </div>
+
+        <div class="type-of-meal type-of-meal--plats">
+
+            <h2 class="type-of-meal__title">plats</h2>
+
+                <button class="btn-menu" name="button" type="button">
+
+                    <div class="btn-menu-body">
+                        <h2 class="btn-menu-body__title">Filet de boeuf aux herbes</h2>
+                        <p class="btn-menu-body__descr">Accompagné de sa ribambelle de légumes</p>
+                    </div>
+
+                    <div class="btn-menu-price">
+                        <div class="btn-menu-price__number">40€</div>
+                    </div>
+                    
+                    <div class="btn-menu-check"> 
+                        <i class="btn-menu-check__icon fa-solid fa-circle-check"></i>
                     </div>
 
                 </button>
 
                 <button class="btn-menu" name="button" type="button">
 
-                    <div class="btn-menu-body"></div>
-                        <h2 class="btn-menu__title">Oeuf au plat</h2>
-                        <p class="btn-menu__descr">Assaisonné à la truffe sur lit de caviar</p>
+                    <div class="btn-menu-body" name="button" type="button">
+                        <h2 class="btn-menu-body__title">Parmentier de queue de boeuf</h2>
+                        <p class="btn-menu-body__descr">À la truffe noire sur sa purée de panais</p>
                     </div>
 
                     <div class="btn-menu-price">
-                        <p>20€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="btn-menu-price__number">35€</div>
                     </div>
 
-                </button>
-
-        </section>
-
-        <section class="plats">
-
-            <h2 class="plats-title">plats</h2>
-
-                <button class="btn-menu" name="button" type="button">
-
-                    <div class="btn-menu-body"></div>
-                        <h2 class="btn-menu__title">Filet de boeuf aux herbes</h2>
-                        <p class="btn-menu__descr">Accompagné de sa ribambelle de légumes</p>
-                    </div>
-
-                    <div class="btn-menu-price">
-                        <p>40€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                    <div class="btn-menu-check"> 
+                        <i class="btn-menu-check__icon fa-solid fa-circle-check"></i>
                     </div>
 
                 </button>
 
                 <button class="btn-menu" name="button" type="button">
 
-                    <div class="btn-menu-body" name="button" type="button"></div>
-                        <h2 class="btn-menu__title">Parmentier de queue de boeuf</h2>
-                        <p class="btn-menu__descr">À la truffe noire sur sa purée de panais</p>
+                    <div class="btn-menu-body">
+                        <h2 class="btn-menu-body__title">Filet de turbot</h2>
+                        <p class="btn-menu-body__descr">Aux agrumes</p>
                     </div>
 
                     <div class="btn-menu-price">
-                        <p>35€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="btn-menu-price__number">44€</div>
+                    </div>
+
+                    <div class="btn-menu-check"> 
+                        <i class="btn-menu-check__icon fa-solid fa-circle-check"></i>
+                    </div>
+
+                </button>
+
+        </div>
+
+        <div class="type-of-meal type-of-meal--desserts">
+
+            <h2 class="type-of-meal__title">desserts</h2>
+
+                <button class="btn-menu" name="button" type="button">
+
+                    <div class="btn-menu-body">
+                        <h2 class="btn-menu-body__title">Paris-Brest</h2>
+                        <p class="btn-menu-body__descr">Revisité</p>
+                    </div>
+
+                    <div class="btn-menu-price">
+                        <div class="btn-menu-price__number">18€</div>
+                    </div>
+
+                    <div class="btn-menu-check"> 
+                        <i class="btn-menu-check__icon fa-solid fa-circle-check"></i>
                     </div>
 
                 </button>
 
                 <button class="btn-menu" name="button" type="button">
 
-                    <div class="btn-menu-body"></div>
-                        <h2 class="btn-menu__title">Filet de turbot</h2>
-                        <p class="btn-menu__descr">Aux agrumes</p>
+                    <div class="btn-menu-body">
+                        <h2 class="btn-menu-body__title">Macaron au chocolat d'exception </h2>
+                        <p class="btn-menu-body__descr">Et glace à la vanille de Madagascar</p>
                     </div>
 
                     <div class="btn-menu-price">
-                        <p>44€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="btn-menu-price__number">22€</div>
                     </div>
 
-                </button>
-
-        </section>
-
-        <section class="desserts">
-
-            <h2 class="desserts-title">desserts</h2>
-
-                <button class="btn-menu" name="button" type="button">
-
-                    <div class="btn-menu-body"></div>
-                        <h2 class="btn-menu__title">Paris-Brest</h2>
-                        <p class="btn-menu__descr">Revisité</p>
-                    </div>
-
-                    <div class="btn-menu-price">
-                        <p>18€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                    <div class="btn-menu-check"> 
+                        <i class="btn-menu-check__icon fa-solid fa-circle-check"></i>
                     </div>
 
                 </button>
 
                 <button class="btn-menu" name="button" type="button">
 
-                    <div class="btn-menu-body"></div>
-                        <h2 class="btn-menu__title">Macaron au chocolat d'exception </h2>
-                        <p class="btn-menu__descr">Et glace à la vanille de Madagascar</p>
+                    <div class="btn-menu-body">
+                        <h2 class="btn-menu-body__title">Mousse au chocolat </h2>
+                        <p class="btn-menu-body__descr">Au piment d'Espelette et à la truffe noire</p>
                     </div>
 
                     <div class="btn-menu-price">
-                        <p>22€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="btn-menu-price__number">23€</div>
+                    </div>
+
+                    <div class="btn-menu-check"> 
+                        <i class="btn-menu-check__icon fa-solid fa-circle-check"></i>
                     </div>
 
                 </button>
 
-                <button class="btn-menu" name="button" type="button">
-
-                    <div class="btn-menu-body"></div>
-                        <h2 class="btn-menu__title">Mousse au chocolat </h2>
-                        <p class="btn-menu__descr">Au piment d'Espelette et à la truffe noire</p>
-                    </div>
-
-                    <div class="btn-menu-price">
-                        <p>23€</p>
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-
-                </button>
-
-        </section>
-
+        </div>
 
     </section>
 
@@ -188,7 +220,7 @@
 
     <footer class="footer">
         
-        <p><img src="css\images\ohmyfood.png" alt="logo" class="footer__logo"/></p>
+        <img src="css\images\ohmyfood.png" alt="logo" class="footer__logo"/>
 
         <div class="footer-link">
             <i class="footer-link__icons fa-solid fa-utensils"></i>
@@ -209,8 +241,6 @@
         </div> 
 
     </footer>
-
-
 
 </body>
 

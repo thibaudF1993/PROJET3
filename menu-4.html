@@ -11,31 +11,37 @@
 </head>
 
 <body>
-    
-    <header>
 
-        <a href="index.html"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>
+    <header class="header">
 
-        <img src="css\images\ohmyfood.png" alt="logo" class="header-logo"/>
+        <a class="header__link" href="index.html"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>
+
+        <img src="css\images\ohmyfood.png" alt="logo" class="header__logo"/>
 
     </header>
-
-    <section class="restau-pic">
-
-        <img src="css\images\le délice des sens.jpg" alt="photo restaurant"/>
-
-    </section>
+    
 
     <section class="menu">
 
-        <div class="menu-title">
-            <h1>Le délice des sens</h1>
-            <i class="fa-solid fa-heart"></i>
+        <div class="intro">
+
+            <div class="intro__restau-pic">
+                <img src="css\images\le délice des sens.jpg" alt="photo restaurant"/>
+            </div>
+
+            <div class="intro__restau-name">
+                <h1>Le délice des sens</h1>
+                <div class="heart-icon">
+                    <div class="empty-heart"><i class="fa-regular fa-heart fa-2xl heart-empty"></i></div>
+                    <div class="colorized-heart"><i class="fa-solid fa-heart fa-2xl heart-color1" ></i></div>
+                </div>
+            </div>
+
         </div>
 
-        <section class="entrées">
+        <div class="type-of-meal type-of-meal">
 
-            <h2 class="entrées-title">entrées</h2>
+            <h2 class="type-of-meal__title">entrées</h2>
 
                 <button class="btn-menu" name="button" type="button">
                     
@@ -45,8 +51,28 @@
                     </div>
 
                     <div class="btn-menu-price">
-                        <p>25€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="btn-menu-price__number">25€</div>
+                    </div>
+
+                    <div class="btn-menu-check">  
+                        <i class="btn-menu-check__icon fa-solid fa-circle-check"></i>
+                    </div>  
+
+                </button>
+
+                <button class="btn-menu" name="button" type="button">
+
+                    <div class="btn-menu-body">
+                        <h2 class="btn-menu-body__title">Bouchée de homard croustillant </h2>
+                        <p class="btn-menu-body__descr">Et sa farandole de petits légumes</p>
+                    </div>
+
+                    <div class="btn-menu-price">
+                        <div class="btn-menu-price__number">35€</div>
+                    </div>
+
+                    <div class="btn-menu-check"> 
+                        <i class="btn-menu-check__icon fa-solid fa-circle-check"></i>
                     </div>
 
                 </button>
@@ -54,129 +80,135 @@
                 <button class="btn-menu" name="button" type="button">
 
                     <div class="btn-menu-body">
-                        <h2 class="btn-menu__title">Bouchée de homard croustillant</h2>
-                        <p class="btn-menu__descr">Et sa farandole de petits légumes</p>
+                        <h2 class="btn-menu-body__title">Velouté de cèpes</h2>
+                        <p class="btn-menu-body__descr">Aux truffes</p>
                     </div>
 
                     <div class="btn-menu-price">
-                        <p>35€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="btn-menu-price__number">20€</div>
+                    </div>
+                    
+                    <div class="btn-menu-check"> 
+                        <i class="btn-menu-check__icon fa-solid fa-circle-check"></i>
+                    </div>
+
+                </button>
+
+        </div>
+
+        <div class="type-of-meal type-of-meal--plats">
+
+            <h2 class="type-of-meal__title">plats</h2>
+
+                <button class="btn-menu" name="button" type="button">
+
+                    <div class="btn-menu-body">
+                        <h2 class="btn-menu-body__title">Poulet rôti aux herbes de Provence</h2>
+                        <p class="btn-menu-body__descr">Et sa crème de truffe</p>
+                    </div>
+
+                    <div class="btn-menu-price">
+                        <div class="btn-menu-price__number">40€</div>
+                    </div>
+                    
+                    <div class="btn-menu-check"> 
+                        <i class="btn-menu-check__icon fa-solid fa-circle-check"></i>
                     </div>
 
                 </button>
 
                 <button class="btn-menu" name="button" type="button">
 
-                    <div class="btn-menu-body"></div>
-                        <h2 class="btn-menu__title">Velouté de cèpes</h2>
-                        <p class="btn-menu__descr">Aux truffes</p>
+                    <div class="btn-menu-body" name="button" type="button">
+                        <h2 class="btn-menu-body__title">Langouste rôtie</h2>
+                        <p class="btn-menu-body__descr">Et ses légumes de saison</p>
                     </div>
 
                     <div class="btn-menu-price">
-                        <p>20€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="btn-menu-price__number">35€</div>
                     </div>
 
-                </button>
-
-        </section>
-
-        <section class="plats">
-
-            <h2 class="plats-title">plats</h2>
-
-                <button class="btn-menu" name="button" type="button">
-
-                    <div class="btn-menu-body"></div>
-                        <h2 class="btn-menu__title">Poulet rôti aux herbes de Provence </h2>
-                        <p class="btn-menu__descr">Et sa crème de truffe</p>
-                    </div>
-
-                    <div class="btn-menu-price">
-                        <p>40€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                    <div class="btn-menu-check"> 
+                        <i class="btn-menu-check__icon fa-solid fa-circle-check"></i>
                     </div>
 
                 </button>
 
                 <button class="btn-menu" name="button" type="button">
 
-                    <div class="btn-menu-body" name="button" type="button"></div>
-                        <h2 class="btn-menu__title">Langouste rôtie</h2>
-                        <p class="btn-menu__descr">Et ses légumes de saison</p>
+                    <div class="btn-menu-body">
+                        <h2 class="btn-menu-body__title">Côte de boeuf Angus</h2>
+                        <p class="btn-menu-body__descr">Et sa purée de panais</p>
                     </div>
 
                     <div class="btn-menu-price">
-                        <p>35€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="btn-menu-price__number">44€</div>
+                    </div>
+
+                    <div class="btn-menu-check"> 
+                        <i class="btn-menu-check__icon fa-solid fa-circle-check"></i>
+                    </div>
+
+                </button>
+
+        </div>
+
+        <div class="type-of-meal type-of-meal--desserts">
+
+            <h2 class="type-of-meal__title">desserts</h2>
+
+                <button class="btn-menu" name="button" type="button">
+
+                    <div class="btn-menu-body">
+                        <h2 class="btn-menu-body__title">Farandole de desserts</h2>
+                        <p class="btn-menu-body__descr">Du chef</p>
+                    </div>
+
+                    <div class="btn-menu-price">
+                        <div class="btn-menu-price__number">18€</div>
+                    </div>
+
+                    <div class="btn-menu-check"> 
+                        <i class="btn-menu-check__icon fa-solid fa-circle-check"></i>
                     </div>
 
                 </button>
 
                 <button class="btn-menu" name="button" type="button">
 
-                    <div class="btn-menu-body"></div>
-                        <h2 class="btn-menu__title">Côte de boeuf Angus</h2>
-                        <p class="btn-menu__descr">Et sa purée de panais</p>
+                    <div class="btn-menu-body">
+                        <h2 class="btn-menu-body__title">Crème brulée</h2>
+                        <p class="btn-menu-body__descr">Revisitée</p>
                     </div>
 
                     <div class="btn-menu-price">
-                        <p>44€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="btn-menu-price__number">22€</div>
                     </div>
 
-                </button>
-
-        </section>
-
-        <section class="desserts">
-
-            <h2 class="desserts-title">desserts</h2>
-
-                <button class="btn-menu" name="button" type="button">
-
-                    <div class="btn-menu-body"></div>
-                        <h2 class="btn-menu__title">Farandole de desserts</h2>
-                        <p class="btn-menu__descr">Du chef</p>
-                    </div>
-
-                    <div class="btn-menu-price">
-                        <p>18€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                    <div class="btn-menu-check"> 
+                        <i class="btn-menu-check__icon fa-solid fa-circle-check"></i>
                     </div>
 
                 </button>
 
                 <button class="btn-menu" name="button" type="button">
 
-                    <div class="btn-menu-body"></div>
-                        <h2 class="btn-menu__title">Crème brulée</h2>
-                        <p class="btn-menu__descr">Revisitée</p>
+                    <div class="btn-menu-body">
+                        <h2 class="btn-menu-body__title">Tiramisu</h2>
+                        <p class="btn-menu-body__descr">À la noisette</p>
                     </div>
 
                     <div class="btn-menu-price">
-                        <p>22€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="btn-menu-price__number">23€</div>
+                    </div>
+
+                    <div class="btn-menu-check"> 
+                        <i class="btn-menu-check__icon fa-solid fa-circle-check"></i>
                     </div>
 
                 </button>
 
-                <button class="btn-menu" name="button" type="button">
-
-                    <div class="btn-menu-body"></div>
-                        <h2 class="btn-menu__title">Tiramisu</h2>
-                        <p class="btn-menu__descr">À la noisette</p>
-                    </div>
-
-                    <div class="btn-menu-price">
-                        <p>23€</p>
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-
-                </button>
-
-        </section>
-
+        </div>
 
     </section>
 
@@ -188,7 +220,7 @@
 
     <footer class="footer">
         
-        <p><img src="css\images\ohmyfood.png" alt="logo" class="footer__logo"/></p>
+        <img src="css\images\ohmyfood.png" alt="logo" class="footer__logo"/>
 
         <div class="footer-link">
             <i class="footer-link__icons fa-solid fa-utensils"></i>
@@ -209,8 +241,6 @@
         </div> 
 
     </footer>
-
-
 
 </body>
 
