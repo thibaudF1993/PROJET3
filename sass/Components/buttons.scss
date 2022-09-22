@@ -49,6 +49,8 @@
         align-items: center;
         justify-content: space-evenly;
         cursor: pointer;
+        font-weight: bold;
+        height: 130px;
         &:hover{
             background-color: adjust-color($color: $color-secondary ,$hue: 0, $saturation: 0%, $lightness: 25%);
             box-shadow: $shadow-button-hover;
@@ -65,12 +67,10 @@
             font-size: 28px;
             padding: 0px 15px;
         }
-        & p {
-            font-weight: bold;
-            &:hover {
+        &:hover {
                 text-decoration: none;
             }
-        }
+            
         @include tablette-only {
             width: 600px;
             margin: 25px auto;
