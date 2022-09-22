@@ -68,7 +68,10 @@
       animation: meal-presentation 2000ms 500ms backwards;
     }
     &__title {
-      @include menu-title-section;
+        text-transform: uppercase;
+        font-family: $police-txt;
+        font-size: 25px;
+        margin: 15px 30px;
       @include tablette-only {
         text-align: center;
       }
