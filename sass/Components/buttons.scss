@@ -1,5 +1,8 @@
+// bouton violet
+
 .btn-purple {
     color: white;
+    margin-top: 15px;
     padding: 22px 33px;
     border: none;
     border-radius: 40px;
@@ -13,6 +16,8 @@
     box-shadow:  0px 8px 20px grey;
     }
 }
+
+// boutons page d'accueil
 
 .btn-order {
     display: flex;
@@ -46,15 +51,19 @@
         cursor: pointer;
         &:hover{
             background-color: adjust-color($color: $color-secondary ,$hue: 0, $saturation: 0%, $lightness: 25%);
+            box-shadow: $shadow-button-hover;
         }
         &:hover > .icons{
             color: $color-primary;
+        }
+        @include desktop {
+            justify-content: space-between;
         }
     }
         & .icons {
             color: grey;
             font-size: 28px;
-            padding: 0px 5px;
+            padding: 0px 15px;
         }
         & p {
             font-weight: bold;
@@ -62,4 +71,118 @@
                 text-decoration: none;
             }
         }
+        @include tablette-only {
+            width: 600px;
+            margin: 25px auto;
+            
+        }
     }
+
+
+//    boutons pages de menu  
+
+@keyframes check {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.btn-menu {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px;
+    width: 90%;
+    margin: 15px auto;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 3px 10px grey;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    &:hover{
+        background-color: adjust-color($color: $color-secondary ,$hue: 0, $saturation: 0%, $lightness: 25%);
+        box-shadow: $shadow-button-hover;
+    }
+    &:hover > .btn-menu-check {
+        transform: translateX(-0px);
+        width: 100px;
+        overflow: visible;
+        & > .btn-menu-check__icon {
+            transform: rotate(360deg);
+            width: auto;
+            animation: check 300ms 100ms forwards;
+        }
+    }
+    &:hover > .btn-menu-price > .btn-menu-price__number {
+        transform: translateX(-230%);
+    }
+    &:hover > .btn-menu-body > .btn-menu-body__descr {
+        width: 85%;
+    }
+    & .btn-menu-body {
+        margin-left: 20px;
+        text-align: initial;
+        transition: all 300ms;
+        width: 80%;
+        &__title {
+            font-size: 27px;
+            margin-top: 15px;
+            margin-bottom: -25px;
+        }
+        &__descr {
+            font-size: 25px;
+            margin-bottom: 15px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: all 300ms;
+            width: 100%;
+          }
+    }
+    & .btn-menu-price {
+        position: relative;
+        display: flex;
+        align-items: center;
+        &__number {
+            font-weight: bold;
+            position: absolute;
+            right: 20px;
+            top: 4px;
+            font-size: 25px;
+            transition: all 300ms linear;
+        }
+    }
+    .btn-menu-check {
+        background-color: #99E2D0;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        transition: all 300ms linear;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        align-items: center;
+        right: 0px;
+        width: 0px;
+        overflow: hidden;
+        height: 100%;
+        &__icon {
+            font-size: 40px;
+            color: white;
+            transition: all 300ms linear;
+            overflow: hidden;
+          }
+    }
+    @include tablette-only {
+        width: 600px;
+        height: 110px;
+    }
+    @include desktop {
+        width: 600px;
+        height: 110px;
+    }
+  }
