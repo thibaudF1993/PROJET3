@@ -4,7 +4,7 @@
   "description": "dynamiser une page web avec des animations css",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:css/styles.css"
+    "sass": "sass --watch ./sass/main.scss:css/styles.css --style compressed"
   },
   "repository": {
     "type": "git",
