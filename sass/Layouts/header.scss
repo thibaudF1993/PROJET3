@@ -11,9 +11,14 @@
         text-decoration: none;
         font-size: 40px;
         color: black;
+        @include mobile-only {
+            font-size: 30px;
+            top: 37px;
+            left: 20px;
+        }
     }
     &__logo {
-        width: 280px;
+        width: 250px;
         @include tablette-only {
             width: 430px;
         }
