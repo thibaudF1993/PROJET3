@@ -52,7 +52,7 @@
         font-weight: bold;
         height: 130px;
         &:hover{
-            background-color: adjust-color($color: $color-secondary ,$hue: 0, $saturation: 0%, $lightness: 25%);
+            background-color: adjust-color($color: $color-secondary ,$hue: 0, $saturation: 0%, $lightness: 22%);
             box-shadow: $shadow-button-hover;
         }
         &:hover > .icons{
@@ -97,10 +97,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 0px 0px;
-    width: 90%;
+    width: 95%;
     margin: 15px auto;
     border: none;
-    border-radius: 30px;
+    border-radius: 20px;
     box-shadow: 0px 3px 10px grey;
     cursor: pointer;
     position: relative;
@@ -113,6 +113,9 @@
         transform: translateX(-0px);
         width: 100px;
         overflow: visible;
+        @include mobile-only {
+            width: 70px;
+        }
         & > .btn-menu-check__icon {
             transform: rotate(360deg);
             width: auto;
@@ -120,29 +123,42 @@
         }
     }
     &:hover > .btn-menu-price > .btn-menu-price__number {
-        transform: translateX(-230%);
+        transform: translateX(-100px);
+        @include mobile-only {
+            transform: translateX(-240%);
+        }
     }
     &:hover > .btn-menu-body > .btn-menu-body__descr {
         width: 85%;
+        @include mobile-only {
+            width: 77%;
+        }
     }
     & .btn-menu-body {
-        margin-left: 20px;
+        margin-left: 15px;
         text-align: initial;
         transition: all 300ms;
         width: 80%;
         &__title {
-            font-size: 30px;
+            font-size: 22px;
             margin-top: 15px;
-            margin-bottom: -25px;
+            margin-bottom: -15px;
+            width: 100%;
+            @include mobile-only {
+                font-size: 17px;
+            }
         }
         &__descr {
-            font-size: 24px;
+            font-size: 21px;
             margin-bottom: 15px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
             transition: all 300ms;
             width: 100%;
+            @include mobile-only {
+                font-size: 17px;
+            }
           }
     }
     & .btn-menu-price {
@@ -153,15 +169,19 @@
             font-weight: bold;
             position: absolute;
             right: 20px;
-            top: 4px;
-            font-size: 25px;
+            top: 8px;
+            font-size: 17px;
             transition: all 300ms linear;
+            @include mobile-only {
+                right: 20px;
+                top: 4px;
+            }
         }
     }
     .btn-menu-check {
         background-color: #99E2D0;
-        border-top-right-radius: 30px;
-        border-bottom-right-radius: 30px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
         transition: all 300ms linear;
         display: flex;
         justify-content: center;
@@ -172,7 +192,7 @@
         overflow: hidden;
         height: 100%;
         &__icon {
-            font-size: 40px;
+            font-size: 30px;
             color: white;
             transition: all 300ms linear;
             overflow: hidden;
@@ -187,12 +207,3 @@
         height: 110px;
     }
   }
-
-  
-  
-  
-  
-  
-  
-  
-  
