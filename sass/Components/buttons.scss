@@ -52,7 +52,7 @@
         font-weight: bold;
         height: 130px;
         &:hover{
-            background-color: adjust-color($color: $color-secondary ,$hue: 0, $saturation: 0%, $lightness: 22%);
+            background-color: adjust-color($color: $color-secondary ,$hue: 0, $saturation: 0%, $lightness: 24%);
             box-shadow: $shadow-button-hover;
         }
         &:hover > .icons{
